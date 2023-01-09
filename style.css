@@ -70,3 +70,45 @@ span{
     top: -60px;
     z-index: 3;
 }
+
+.grid-gallery{
+    display: grid;
+    position: relative;
+    top: -600px;
+    z-index: 5;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-template-areas: 
+    "one two three"
+    "four five six"
+    ;
+}
+
+.one{
+   
+    grid-area: one;
+    background-image: url(/img/grid-one.jpeg);
+}
+.two{
+    grid-area: two;
+    background-image: url(/img/grid-one.jpeg);
+}
+.three{
+    grid-area: three;
+    background-image: url(/img/grid-one.jpeg);
+}
+.four{
+    grid-area: four;
+    background-image: url(/img/grid-one.jpeg);
+}
+.five{
+    grid-area: five;
+    background-image: url(/img/grid-one.jpeg);
+}
+.six{
+    grid-area: six;
+    background-image: url(/img/grid-one.jpeg);
+}
