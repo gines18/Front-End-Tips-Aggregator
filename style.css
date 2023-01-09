@@ -1,148 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
 }
 
-nav{
+.navbar{
     display: flex;
     position: relative;
-    justify-content: center;
-    z-index: 4;
-}
-
-.left{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    height: 90px;
-    width: 500px;
-    /* border: 1px solid red; */
-    list-style-type: none;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-start;
-    font-size: 30px;
     background-color: white;
+    color: black;
+    z-index: 9;
+    width: 70%;
+    margin: auto; 
+    
+}   
+
+.brand-title{
+    font-size: 1.5rem;
+    margin: 0.5rem;
 }
 
-.right {
+.navbar-list ul{
+    margin: 0;
+    padding: 0;
     display: flex;
-    position: relative;
-    top: 10px;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 90px;
-    width: 400px;
-    /* border: 1px solid red; */
     list-style-type: none;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 20px;
-    background-color: white;
 }
 
-@media screen and (max-width:1000px) {
-    nav{
-        display: flex;
-        position: relative;
-        justify-content: center;
-        z-index: 4;
-    }
-    
-    .left{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        height: 90px;
-        width: 300px;
-        /* border: 1px solid red; */
-        list-style-type: none;
-        align-items: center;
-        justify-content: flex-start;
-        font-size: 30px;
-        background-color: white;
-    }
-    
-    .right {
-        display: flex;
-        position: relative;
-        top: 10px;
-        flex-direction: row;
-        justify-content: flex-end;
-        height: 90px;
-        width: 200px;
-        /* border: 1px solid red; */
-        list-style-type: none;
-        align-items: center;
-        justify-content: space-around;
-        font-size: 20px;
-        background-color: white;
-    }
-    
-    
+.navbar-list li{
+   
+    list-style-type: none;
 }
 
-@media screen and (max-width:600px) {
-    nav{
-        display: flex;
-        position: relative;
-        
-        z-index: 4;
-    }
-    
-    .left{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        height: 90px;
-        width: 150px;
-        /* border: 1px solid red; */
-        list-style-type: none;
-        align-items: center;
-        font-size: 20px;
-        background-color: white;
-    }
-    
-    .right {
-        display: flex;
-        position: relative;
-        top: 10px;
-        flex-direction: row;
-        justify-content: space-around;
-        height: 80px;
-        width: 190px;
-        /* border: 1px solid red; */
-        list-style-type: none;
-        align-items: center;
-        font-size: 20px;
-        background-color: white;
-    }
-    
-    
+.navbar-list li a{ 
+text-decoration: none;
+color:black;
+padding: 1rem;
+display: block;
+
+}
+
+.navbar-list li:hover{
+    background-color: #555;
 }
 
 span{
     color: blue;
 }
 
-/* h1{
-    display: flex;
-    align-items: center;
-    position: relative;
-    top: -900px;
-    margin-left: 600px;
-    color: white;
-    z-index: 8;
-    border: 1px solid red;
-    width: 820px;
-    height: 70px;
-    font-size: 40px;
-    background-color: black;
-} */
 
 .main-photo{
     position: relative;
-    top: -60px;
-    z-index: 3;
+    margin-top: -1.5rem;
     width: 100%;
     height: auto;
 }
@@ -152,7 +66,7 @@ span{
     display: grid;
     position: relative;
     top: -600px;
-    z-index: 5;
+    z-index: 2;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 200px 200px;
     gap: 10px;
@@ -290,3 +204,58 @@ span{
     background-position: center;
     background-size: cover;
 }
+
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+@media  (max-width: 400px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-list{
+        display: none;
+        width: 100%;
+}
+
+.navbar{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar-list ul{
+    width: 100%;
+    flex-direction: column;
+}
+
+.navbar-list li{
+    text-align: center;
+}
+
+.navbar-list li a{
+    padding: .5rem 1rem;
+}
+
+
+.navbar-list.active{
+    display: flex;
+}
+}
+
+
+    
