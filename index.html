@@ -1,56 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Front End Tips</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <script src="script.js" defer></script>
-</head>
-<body>
-
-
-    <nav class="navbar">
-        <div class="brand-title">Brand Name</div>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-
-        <div class="navbar-list">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+  </head>
+  <body data-spy="scroll" data-target="#list-example">
+    <!-- navbar -->
+    <div class="container1">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
         </div>
-        </nav>
+      </nav>
+    </div>
 
-<!-- Main img -->
-<img class="main-photo" src="img/main-photo.jpeg" alt="">
+    <!-- welcome-section -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Frontend Tips Aggregator</h1>
+        <p class="lead">
+          Top random WebDev tools to help you enhance your Projects.
+        </p>
+      </div>
+    </div>
+    <!-- main -->
 
-<!-- <section>
-    <h1>Lets discover Front-End Development together!</h1>
-</section> -->
+    <div class="container2 ml-5 mr-5">
+      <div class="row justify-content-between">
+        <div class="col4">
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Code Magic</h5>
+              <p class="card-text">Make styling your website easier.</p>
+              <a
+                href="https://code-magic.vercel.app/"
+                target="_blank"
+                class="btn btn-primary mt-5"
+                >Try</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Coding assistant</h5>
+              <p class="card-text">
+                BLACKBOX is your AI-Powered Coding Assistant so you can {Code}
+                10X Faster and Better
+              </p>
+              <a href="http;//www.useblackbox.io" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Content writer</h5>
+              <p class="card-text">
+                BLACKBOX is your AI-Powered Coding Assistant so you can {Code}
+                10X Faster and Better
+              </p>
+              <a href="#" class="btn btn-primary">Use</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-
-<!-- Grid gallery -->
-<section class="grid-gallery">
-
-<div class="one"><p>hello</p></div>
-<div class="two"><p>hello</p></div>
-<div class="three"><p>hello</p></div>
-<div class="four"><p>hello</p></div>
-<div class="five"><p>hello</p></div>
-<div class="six"><p>hello</p></div>
-
-</section>
-
-
-
-
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
