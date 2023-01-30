@@ -1,2 +1,4 @@
-var currentTime = moment().format("MMMM Do YYYY");
-document.getElementById("demo").innerHTML = currentTime;
+let currentDate = moment().format("MMMM Do YYYY");
+$("#date").text(currentDate);
+
+
